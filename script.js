@@ -1,1 +1,0 @@
-onclick="document.getElementById('ocean-video').play()"
