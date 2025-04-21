@@ -2,9 +2,13 @@
 
 # 🌊 Oceano Vivo
 
-**Oceano Vivo** é um site desenvolvido como parte da Atividade Prática Supervisionada (APS) da disciplina **Programação Web Responsiva**, do curso de Ciência da Computação – UNIP.
+**Oceano Vivo** é um site desenvolvido como parte da Atividade Prática Supervisionada (APS) da disciplina **Programação Web Responsiva**, do curso de Sistemas de Informação – UNIP.
 
 O objetivo do projeto é **conscientizar sobre a importância da preservação dos oceanos**, abordando sua biodiversidade, as ameaças que enfrentam e atitudes sustentáveis que todos podem adotar.
+
+Este projeto está sendo desenvolvido com base em um protótipo criado no Figma, que serve como guia para o design e estrutura do site. Você pode acessar o protótipo através do link abaixo:
+
+[Protótipo no Figma] (https://www.figma.com/design/927U94wCd89O5OBO0eB0Xn/Untitled?node-id=1-2&t=H5b3LudRjl5AfeL1-1)
 
 ---
 
@@ -13,7 +17,7 @@ O objetivo do projeto é **conscientizar sobre a importância da preservação d
 - HTML5  
 - CSS3  
 - JavaScript (opcional/interativo)  
-- Fonte: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Fonte: [Montserrat](https://fonts.google.com/specimen/Montserrat)
 
 ---
 
@@ -30,7 +34,7 @@ O objetivo do projeto é **conscientizar sobre a importância da preservação d
 
 ## 🎯 Objetivo da APS
 
-Criar um site temático relacionado ao **desenvolvimento sustentável**, utilizando HTML e CSS, com organização, estética e conteúdo educativo.
+Criar um site temático relacionado ao **desenvolvimento sustentável**, utilizando HTML, CSS e JavaScript com organização, estética e conteúdo educativo.
 
 ---
 
@@ -38,7 +42,6 @@ Criar um site temático relacionado ao **desenvolvimento sustentável**, utiliza
 
 - Nome 1 – RA #
 - Nome 2 – RA #
-*(Adicione os nomes e RAs dos membros do grupo aqui)*
 
 ---
 
