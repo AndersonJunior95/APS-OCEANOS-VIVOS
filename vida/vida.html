@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <title>Vida Marinha</title>
+    <link rel="stylesheet" href="vida.css">
+</head>
+<body>
+    <section>
+        <div class="vida-mar">
+            <h1>Vida Marinha</h1>
+            <p>Confira as espécies mais conhecidas</p>
+        </div>
+            <div class="cards-carrousel">
+                <button class="arrow left" onclick="scrollCarrossel(-1)">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </button>
+                <ul class="cards" id="carrossel">
+                    <li class="primeiro-item">
+                        <a href="#" class="cavalo-mar">
+                            <img src="image/Cavalo.png" alt="Cavalo Marinho" class="img-cavalo">
+                            <p class="titulo">Cavalo Marinho</p>
+                            <p class="descricao">O cavalo-marinho é um pequeno peixe marinho conhecido por seu formato único, que lembra a cabeça de um cavalo. Vive em águas rasas e calmas, próximas a corais e vegetações subaquáticas, onde se camufla com facilidade.</p>
+                            <button class="seta-dir">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="primeiro-item">
+                        <a href="#" class="cavalo-mar">
+                            <img src="image/Cavalo.png" alt="Cavalo Marinho" class="img-cavalo">
+                            <p class="titulo">Cavalo Marinho</p>
+                            <p class="descricao">O cavalo-marinho é um pequeno peixe marinho conhecido por seu formato único, que lembra a cabeça de um cavalo. Vive em águas rasas e calmas, próximas a corais e vegetações subaquáticas, onde se camufla com facilidade.</p>
+                            <button class="seta-dir">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="primeiro-item">
+                        <a href="#" class="cavalo-mar">
+                            <img src="image/Cavalo.png" alt="Cavalo Marinho" class="img-cavalo">
+                            <p class="titulo">Cavalo Marinho</p>
+                            <p class="descricao">O cavalo-marinho é um pequeno peixe marinho conhecido por seu formato único, que lembra a cabeça de um cavalo. Vive em águas rasas e calmas, próximas a corais e vegetações subaquáticas, onde se camufla com facilidade.</p>
+                            <button class="seta-dir">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="primeiro-item">
+                        <a href="#" class="cavalo-mar">
+                            <img src="image/Cavalo.png" alt="Cavalo Marinho" class="img-cavalo">
+                            <p class="titulo">Cavalo Marinho</p>
+                            <p class="descricao">O cavalo-marinho é um pequeno peixe marinho conhecido por seu formato único, que lembra a cabeça de um cavalo. Vive em águas rasas e calmas, próximas a corais e vegetações subaquáticas, onde se camufla com facilidade.</p>
+                            <button class="seta-dir">
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+                <button class="arrow right" onclick="scrollCarrossel(1)">
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                  </button>
+            </div>
+        </div>
+    </section>
+<script>
+    function scrollCarrossel(direction) {
+        const carrossel = document.getElementById("carrossel");
+        const scrollAmount = carrossel.clientWidth * 0.8;
+        carrossel.scrollBy({ 
+            left: direction * scrollAmount, 
+            behavior: 'smooth' 
+        });
+    }
+</script>
+</body>
+</html>
