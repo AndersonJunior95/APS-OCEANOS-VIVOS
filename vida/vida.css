@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+  --Azul-Titulo: #0050A7;
+}
 * {
     margin: 0;
     padding: 0;
@@ -8,21 +11,39 @@
 }
 
 body {
-    background: url(image/Corals.png) no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
+    background-color: white;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.2); /* leve escurecimento */
-    z-index: -1;
+header .navegacao {
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  
+    & img {
+      margin-left: 3rem;
+      width: 100px;
+    }
+    & ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      padding: 0rem;
+    }
+    & li {
+      padding: 8px;
+    }
+    & a {
+      text-decoration: none;
+      color: var(--Azul-Titulo);
+      border: 2px solid #007AFF;
+      border-radius: 2rem;
+      padding: 10px;
+      margin-right: 1rem;
+    }
 }
 
 .vida-mar {
@@ -30,12 +51,14 @@ body::before {
     color: #fff;
     
     & h1 {
+        color: var(--Azul-Titulo);
         margin-top: 2rem;
         font-size: 3rem;
         text-align: center;
     }
 
     & p {
+        color: var(--Azul-Titulo);
         font-size: 1rem;
     }
 }

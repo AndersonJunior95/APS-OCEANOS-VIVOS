@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --Azul-Titulo: #0050A7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url(imagens/Ocean.avif) no-repeat center center fixed;
+  background-size: cover;
+}
+
+header .navegacao {
+  font-family: 'Montserrat', sans-serif;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+
+  & img {
+    margin-left: 3rem;
+    width: 100px;
+  }
+  & ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0rem;
+  }
+  & li {
+    padding: 8px;
+  }
+  & a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid #007AFF;
+    border-radius: 2rem;
+    padding: 10px;
+    margin-right: 1rem;
+  }
+}
+
+.tittle {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  & img {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 100px;
+  }
+}
+
+.flutuar {
+  animation: subirDescer 4s ease-in-out infinite;
+  position: relative;
+}
+
+@keyframes subirDescer {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.ameacas h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--Azul-Titulo);
+  text-align: center;
+}
+
+.ameacas {
+  text-align: center;
+}
+
+
+.dados-visuais {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  background: -moz-linear-gradient(top, #0050A7, #00b4d8);
+}
+
+.grafico {
+  background: #003f5c;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.grafico h3 {
+  color: white;
+  margin: 20px 0 10px;
+}
+
+.grafico p {
+  font-size: 0.95em;
+  color: #d9e9f0;
+}
+
+.circulo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #00b4d8 40%, #0077b6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
