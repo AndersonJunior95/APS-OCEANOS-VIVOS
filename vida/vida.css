@@ -50,6 +50,10 @@ header .navegacao a {
     margin-right: 1rem;
 }
 
+.azul {
+    color: var(--Azul-Titulo);
+  }
+
 .vida-mar {
     text-align: center;
     color: #fff;
@@ -205,4 +209,79 @@ header .navegacao a {
     transform: rotate(180deg);
     display: inline-block;
     transition: transform 0.3s;
+}
+
+.titulo-vcs {
+    text-align: center;
+    color: var(--Azul-Titulo);
+    
+    & h1 {
+        font-size: 5rem;
+    }
+}
+
+.curiosidade-n1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+    margin-right: 9rem;
+
+    & img {
+        width: 25rem;
+    }
+}
+
+.flutuar {
+    animation: subirDescer 4s ease-in-out infinite;
+    position: relative;
+  }
+
+@keyframes subirDescer {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -10px;
+    }
+    100% {
+      top: 0;
+    }
+}
+
+.curiosidade-n2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+    margin-right: 9rem;
+
+    & img {
+        width: 25rem;
+    }
+}
+
+.curiosidade-n3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+    margin-right: 9rem;
+
+    & img {
+        width: 25rem;
+    }
+}
+
+footer .rodape {
+    padding: 2rem;
+    background-color: var(--Azul-Titulo);
+    margin-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    & p {
+      font-weight: 300;
+      padding: 2px;
+      color: #ffffff;
+      text-align: center;
+    }
 }
