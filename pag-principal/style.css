@@ -35,7 +35,7 @@ header .navegacao {
   }
   & a {
     text-decoration: none;
-    color: black;
+    color: var(--Azul-Titulo);
     border: 2px solid #007AFF;
     border-radius: 2rem;
     padding: 10px;
@@ -163,14 +163,26 @@ header .navegacao {
 
 .sobre-projeto .texto-sobre {
   margin-top: 2rem;
-  font-size: 1rem;
-  margin-left: 5rem;
-  margin-right: 2rem;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+
+  & p {
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
   & img {
-    width: 100rem;
+    border-radius: 2rem;
+    width: 32rem;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
   }
 }
 
@@ -203,6 +215,7 @@ footer .rodape {
       padding: 1rem;
     }
     & a {
+      color: var(--Azul-Titulo);
       margin-right: 0;
       margin-bottom: 0.5rem;
     }
