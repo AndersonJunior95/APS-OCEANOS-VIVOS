@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* Importa a fonte Montserrat do Google Fonts */
 
+/* Variáveis de cor */
 :root {
   --Azul-Titulo: #0050A7;
 }
+
+/* Reset e fonte padrão */
 * {
   margin: 0;
   padding: 0;
@@ -10,29 +13,35 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Classe para textos azuis */
 .azul {
   color: var(--Azul-Titulo);
 }
 
+/* Estilização do header e navegação */
 header .navegacao {
   font-family: 'Montserrat', sans-serif;
   justify-content: space-between;
   display: flex;
   align-items: center;
 
+  /* Logo */
   & img {
     margin-left: 3rem;
     width: 100px;
   }
+  /* Lista de navegação */
   & ul {
     display: flex;
     list-style: none;
     align-items: center;
     padding: 0rem;
   }
+  /* Itens da lista */
   & li {
     padding: 8px;
   }
+  /* Links do menu */
   & a {
     text-decoration: none;
     color: var(--Azul-Titulo);
@@ -43,11 +52,13 @@ header .navegacao {
   }
 }
 
+/* Animação de flutuação */
 .flutuar {
   animation: subirDescer 4s ease-in-out infinite;
   position: relative;
 }
 
+/* Keyframes para animação de subir e descer */
 @keyframes subirDescer {
   0% {
     top: 0;
@@ -60,16 +71,19 @@ header .navegacao {
   }
 }
 
+/* Seção oceano */
 .oceano {
   margin-top: 2rem;
   display: flex;
   align-items: center;
 
+  /* Imagem do oceano */
   & img {
     width: 44rem;
   }
 }
 
+/* Texto da seção oceano */
 .oceano .texto-oce {
   margin-left: 2rem;
   & h1 {
@@ -81,23 +95,27 @@ header .navegacao {
   }
 }
 
+/* Seção portal-fish */
 .portal-fish {
   font-family: 'Montserrat', sans-serif;
   margin-top: 2rem;
   display: flex;
   align-items: center; 
 
+  /* Imagem do portal */
   & img {
     width: 44rem;
   }
 }
 
+/* Seção importância */
 .importancia {
   margin-top: 2rem;
   justify-content: center;
   text-align: center;
   align-items: center;
 
+  /* Título */
   & h1 {
     font-size: 3rem;
     font-weight: 900;
@@ -106,6 +124,7 @@ header .navegacao {
     color: var(--Azul-Titulo);
   }
 
+  /* Parágrafo */
   & p {
     margin-top: 1rem;
     color: #000;
@@ -114,18 +133,21 @@ header .navegacao {
   }
 }
 
+/* Seção de vídeo */
 .video-import {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  /* Vídeo */
   & video {
     width: 50%;
     margin-bottom: 5rem;
   }
 }
 
+/* Seção ações humanas */
 .acoes-human h1 {
   margin-top: 3rem;
   font-size: 3rem;
@@ -140,16 +162,19 @@ header .navegacao {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  /* Imagem das baleias */
   & img {
     width: 23rem;
   }
 }
 
+/* Seção sobre o projeto */
 .sobre-projeto {
   font-family: 'Montserrat', sans-serif;
   justify-content: space-between;
   align-items: center;
 
+  /* Título */
   & h1 {
     margin-top: 1rem;
     font-size: 3rem;
@@ -161,6 +186,7 @@ header .navegacao {
   }
 }
 
+/* Texto e imagem da seção sobre */
 .sobre-projeto .texto-sobre {
   margin-top: 2rem;
   display: flex;
@@ -169,6 +195,7 @@ header .navegacao {
   align-items: center;
   gap: 2rem;
 
+  /* Parágrafo */
   & p {
     font-size: 1.1rem;
     margin-left: 2rem;
@@ -177,6 +204,7 @@ header .navegacao {
     text-align: justify;
   }
   
+  /* Imagem */
   & img {
     border-radius: 2rem;
     width: 32rem;
@@ -186,11 +214,13 @@ header .navegacao {
   }
 }
 
+/* Rodapé */
 footer .rodape {
   padding: 2rem;
   background-color: var(--Azul-Titulo);
   margin-top: 3rem;
   font-family: 'Montserrat', sans-serif;
+  /* Texto do rodapé */
   & p {
     font-weight: 300;
     padding: 2px;
@@ -199,8 +229,9 @@ footer .rodape {
   }
 }
 
-/* Responsividade nos dispositivos móveis */
+/* Responsividade para dispositivos móveis */
 @media (max-width: 797px) {
+  /* Header responsivo */
   header .navegacao {
     flex-direction: column;
     & img {
@@ -208,7 +239,6 @@ footer .rodape {
       width: 80px;
     }
     & ul {
-      
       align-items: flex-start;
     }
     & li {
@@ -221,6 +251,7 @@ footer .rodape {
     }
   }
 
+  /* Oceano responsivo */
   .oceano {
     flex-direction: column;
     & img {
@@ -232,6 +263,7 @@ footer .rodape {
     }
   }
 
+  /* Portal-fish responsivo */
   .portal-fish {
     display: flex;
     & img {
@@ -239,6 +271,7 @@ footer .rodape {
     }
   }
 
+  /* Importância responsivo */
   .importancia {
     & h1 {
       font-size: 2rem;
@@ -249,10 +282,12 @@ footer .rodape {
     }
   }
 
+  /* Vídeo responsivo */
   .video-import video {
     width: 90%;
   }
 
+  /* Baleias responsivo */
   .acoes-human .baleias {
     display: flex;
     & img {
@@ -261,6 +296,7 @@ footer .rodape {
     }
   }
 
+  /* Sobre o projeto responsivo */
   .sobre-projeto .texto-sobre {
     flex-direction: column;
     margin-left: 1rem;
@@ -270,6 +306,7 @@ footer .rodape {
     }
   }
 
+  /* Rodapé responsivo */
   footer .rodape {
     padding: 1rem;
     & p {

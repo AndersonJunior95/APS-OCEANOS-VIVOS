@@ -3,127 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte de ícones do Google Material Symbols -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
     <title>Vida Marinha</title>
+    <!-- CSS externo para estilização da página -->
     <link rel="stylesheet" href="vida.css">
 </head>
 <body>
     <header>
         <div class="navegacao">
+            <!-- Logo do projeto -->
             <img src="../pag-principal/Images/logo-color.png" alt="Logo da OCEANOS VIVOS">
-          <nav>
-            <ul>
-              <li><a href="../pag-principal/index.html">Página Inicial</a></li>
-              <li><a href="../como-preser/como-preservar.html">Como Preservar</a></li>
-            </ul>
-          </nav>
-          </div>
+            <nav>
+                <ul>
+                    <!-- Links de navegação -->
+                    <li><a href="../pag-principal/index.html">Página Inicial</a></li>
+                    <li><a href="../como-preser/como-preservar.html">Como Preservar</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section>
         <div class="vida-mar">
+            <!-- Título principal da seção -->
             <h1>Vida Marinha</h1>
             <p>Confira as espécies mais conhecidas</p>
         </div>
-            <div class="cards-carrousel">
-                <button class="arrow left" onclick="scrollCarrossel(-1)">
-                    <span class="material-symbols-outlined">arrow_forward</span>
-                  </button>
-                <ul class="cards" id="carrossel">
-                    <li class="geral">
-                        <a href="#" class="card">
-                            <img src="image/Cavalo.png" alt="Cavalo Marinho" class="img-edit">
-                            <p class="titulo">Cavalo Marinho</p>
-                            <p class="descricao">O cavalo-marinho é um pequeno peixe marinho conhecido por seu formato único, que lembra a cabeça de um cavalo. Vive em águas rasas e calmas, próximas a corais e vegetações subaquáticas, onde se camufla com facilidade.</p>
-                            <button class="seta-dir">
-                                <span class="material-symbols-outlined">arrow_forward</span>
-                            </button>
-                        </a>
-                    </li>
-                    <li class="geral">
-                        <a href="#" class="card">
-                            <img src="image/Tartaruga-Marinha.png" alt="Tartaruga-Marinha" class="img-edit">
-                            <p class="titulo">Tartaruga-Marinha</p>
-                            <p class="descricao">A tartaruga-marinha é um réptil oceânico que realiza longas migrações entre praias de desova e áreas de alimentação. Habita águas tropicais e subtropicais e se alimenta de algas, águas-vivas e esponjas.</p>
-                            <button class="seta-dir">
-                                <span class="material-symbols-outlined">arrow_forward</span>
-                            </button>
-                        </a>
-                    </li>
-                    <li class="geral">
-                        <a href="#" class="card">
-                            <img src="image/Golfinho.jpg" alt="Cavalo Marinho" class="img-edit">
-                            <p class="titulo">Golfinho</p>
-                            <p class="descricao">O golfinho é um mamífero marinho inteligente, conhecido por sua natureza amigável e comportamento social. Vive em grupos chamados cardumes e habita águas costeiras e oceânicas, onde se alimenta de peixes e lulas.</p>
-                            <button class="seta-dir">
-                                <span class="material-symbols-outlined">arrow_forward</span>
-                            </button>
-                        </a>
-                    </li>
-                    <li class="geral">
-                        <a href="#" class="card">
-                            <img src="image/Baleia-Azul.png" alt="Baleia Azul" class="img-edit">
-                            <p class="titulo">Baleia Azul</p>
-                            <p class="descricao">A baleia-azul é o maior animal do planeta, podendo atingir até 30 metros de comprimento. Habita todos os oceanos e se alimenta principalmente de krill, pequenos crustáceos encontrados em águas frias.</p>
-                            <button class="seta-dir">
-                                <span class="material-symbols-outlined">arrow_forward</span>
-                            </button>
-                        </a>
-                    </li>
-                    <li class="geral">
-                        <a href="#" class="card">
-                            <img src="image/Tubarao-Branco.jpg" alt="Tubarao-Branco" class="img-edit">
-                            <p class="titulo">Tubarão Branco</p>
-                            <p class="descricao">O tubarão-branco é um dos maiores predadores dos oceanos, conhecido por sua força, velocidade e comportamento estratégico. Habita águas temperadas e se alimenta de peixes, focas e outros mamíferos marinhos.</p>
-                            <button class="seta-dir">
-                                <span class="material-symbols-outlined">arrow_forward</span>
-                            </button>
-                        </a>
-                    </li>
-                </ul>
-                <button class="arrow right" onclick="scrollCarrossel(1)">
-                    <span class="material-symbols-outlined">arrow_forward</span>
-                  </button>
-            </div>
+        <div class="cards-carrousel">
+            <!-- Botão para rolar o carrossel para a esquerda -->
+            <button class="arrow left" onclick="scrollCarrossel(-1)"></button>
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+            <!-- Lista de cards do carrossel -->
+            <ul class="cards" id="carrossel">
+                <!-- Card 1: Cavalo Marinho -->
+                <li class="geral">
+                    <a href="#" class="card"></a>
+                        <img src="image/Cavalo.png" alt="Cavalo Marinho" class="img-edit">
+                        <p class="titulo">Cavalo Marinho</p>
+                        <p class="descricao">O cavalo-marinho é um pequeno peixe marinho conhecido por seu formato único, que lembra a cabeça de um cavalo. Vive em águas rasas e calmas, próximas a corais e vegetações subaquáticas, onde se camufla com facilidade.</p>
+                        <button class="seta-dir">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </a>
+                </li>
+                <!-- Card 2: Tartaruga-Marinha -->
+                <li class="geral">
+                    <a href="#" class="card">
+                        <img src="image/Tartaruga-Marinha.png" alt="Tartaruga-Marinha" class="img-edit">
+                        <p class="titulo">Tartaruga-Marinha</p>
+                        <p class="descricao">A tartaruga-marinha é um réptil oceânico que realiza longas migrações entre praias de desova e áreas de alimentação. Habita águas tropicais e subtropicais e se alimenta de algas, águas-vivas e esponjas.</p>
+                        <button class="seta-dir">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </a>
+                </li>
+                <!-- Card 3: Golfinho -->
+                <li class="geral">
+                    <a href="#" class="card">
+                        <img src="image/Golfinho.jpg" alt="Cavalo Marinho" class="img-edit">
+                        <p class="titulo">Golfinho</p>
+                        <p class="descricao">O golfinho é um mamífero marinho inteligente, conhecido por sua natureza amigável e comportamento social. Vive em grupos chamados cardumes e habita águas costeiras e oceânicas, onde se alimenta de peixes e lulas.</p>
+                        <button class="seta-dir">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </a>
+                </li>
+                <!-- Card 4: Baleia Azul -->
+                <li class="geral">
+                    <a href="#" class="card">
+                        <img src="image/Baleia-Azul.png" alt="Baleia Azul" class="img-edit">
+                        <p class="titulo">Baleia Azul</p>
+                        <p class="descricao">A baleia-azul é o maior animal do planeta, podendo atingir até 30 metros de comprimento. Habita todos os oceanos e se alimenta principalmente de krill, pequenos crustáceos encontrados em águas frias.</p>
+                        <button class="seta-dir">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </a>
+                </li>
+                <!-- Card 5: Tubarão Branco -->
+                <li class="geral">
+                    <a href="#" class="card">
+                        <img src="image/Tubarao-Branco.jpg" alt="Tubarao-Branco" class="img-edit">
+                        <p class="titulo">Tubarão Branco</p>
+                        <p class="descricao">O tubarão-branco é um dos maiores predadores dos oceanos, conhecido por sua força, velocidade e comportamento estratégico. Habita águas temperadas e se alimenta de peixes, focas e outros mamíferos marinhos.</p>
+                        <button class="seta-dir">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+            <!-- Botão para rolar o carrossel para a direita -->
+            <button class="arrow right" onclick="scrollCarrossel(1)">
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
         </div>
     </section>
-    <!-- Aqui irei adicionar a seção Cursiodades com uma imagem ao lado do texto da curiosidade, a imagem será respectiva ao texto-->
-      <section>
+    <!-- Seção de curiosidades sobre o oceano e seus habitantes -->
+    <section>
         <div class="titulo-vcs">
             <h1>Você sabia?</h1>
             <p>Fatos curiosos sobre os oceanos e seus habitantes.</p>
         </div>
+        <!-- Curiosidade 1: Polvo -->
         <div class="curiosidade-n1">
             <p>O polvo é um dos animais mais fascinantes dos oceanos. <span class="azul"><strong>Ele possui três corações, sangue azul e uma inteligência fora do comum</strong></span> — sendo capaz de resolver labirintos, abrir potes e até aprender por observação.
                 <span class="azul"><strong>Com um corpo extremamente flexível</strong></span>, o polvo consegue se espremer por aberturas minúsculas e escapar de predadores com agilidade. Sua habilidade de mudar de cor e textura o torna um mestre da camuflagem, confundindo inimigos e se adaptando ao ambiente em segundos.
                 Algumas espécies ainda soltam tinta para fugir, criando uma cortina de distração. Viver próximo ao fundo do mar, escondido entre rochas e corais, é parte da sua estratégia de sobrevivência.
                 Além de tudo isso, <span class="azul"><strong>o polvo é um símbolo da biodiversidade marinha e um dos exemplos mais incríveis da complexidade da vida nos oceanos.</strong></span></p>
+            <!-- Imagem ilustrativa da curiosidade -->
             <img src="image/Lula.png" alt="Imagem de uma Lula" class="flutuar">
         </div>
+        <!-- Curiosidade 2: Oceano inexplorado -->
         <div class="curiosidade-n2">
             <img src="image/Oceano.png" alt="Imagem do Oceano" class="flutuar">
             <p>Apesar de cobrir mais de <span class="azul"><strong>70% da superfície da Terra</strong></span>, o oceano ainda é um grande mistério. Estima-se que mais de <span class="azul"><strong>80% de suas águas permanecem inexploradas</strong></span>, invisíveis aos olhos humanos e repletas de vida que ainda nem conhecemos.
                 As profundezas oceânicas guardam paisagens surpreendentes, como montanhas submersas, fossas profundas e vulcões ativos. <span class="azul"><strong>As condições extremas — como ausência de luz, alta pressão e frio intenso</strong></span> — tornam o acesso difícil, mas também revelam ecossistemas únicos e espécies adaptadas de formas extraordinárias.
                 <span class="azul"><strong>Explorar o oceano é como investigar outro planeta</strong></span> — quanto mais mergulhamos, mais percebemos o quanto ainda temos a descobrir.</p>
         </div>
+        <!-- Curiosidade 3: Recifes de corais -->
         <div class="curiosidade-n3">
             <p>Os recifes de corais são frequentemente chamados de <span class="azul"><strong>"florestas do mar"</strong></span> devido à sua incrível diversidade biológica e importância ecológica. Assim como as florestas tropicais na terra, os recifes de <span class="azul"><strong>corais oferecem um habitat essencial para uma grande variedade de espécies</strong></span> marinhas, além de desempenharem <span class="azul"><strong>funções ecológicas vitais</strong></span>.</strong></span></p>
             <img src="image/Corals.png" alt="Imagem de Corais do Oceano" class="flutuar">
         </div>
-      </section>
-<script>
-    function scrollCarrossel(direction) {
-        const carrossel = document.getElementById("carrossel");
-        const scrollAmount = carrossel.clientWidth * 0.8;
-        carrossel.scrollBy({ 
-            left: direction * scrollAmount, 
-            behavior: 'smooth' 
-        });
-    }
-</script>
-<footer>
-    <div class="rodape">
-      <p> &copy; 2025 Projeto OCEANOS VIVOS - Todos os direitos reservados <br> Desenvolvido por RA: H666821 E RA: R827B0  <br> Desenvolvido para fins educacionais. <br> Crédito das Imagens: FREEPIK <br> Projeto acadêmico desenvolvido como parte da APS – Sistemas de Informação / UNIP 2025 </p>
-    </div>
-  </footer>
+    </section>
+    <footer>
+        <div class="rodape">
+            <!-- Informações do rodapé e créditos -->
+            <p> &copy; 2025 Projeto OCEANOS VIVOS - Todos os direitos reservados <br> Desenvolvido por RA: H666821 E RA: R827B0  <br> Desenvolvido para fins educacionais. <br> Crédito das Imagens: FREEPIK <br> Projeto acadêmico desenvolvido como parte da APS – Sistemas de Informação / UNIP 2025 </p>
+        </div>
+    </footer>
+    <!-- Script JavaScript externo para funcionalidades da página -->
+    <script src="vida.js"></script>
 </body>
 </html>

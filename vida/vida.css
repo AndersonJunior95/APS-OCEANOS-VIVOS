@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* Importa a fonte Montserrat do Google Fonts */
 
 :root {
-    --Azul-Titulo: #0050A7;
+    --Azul-Titulo: #0050A7; /* Variável para cor azul usada nos títulos */
 }
 
+/* Reset básico e fonte padrão */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Estilização do body */
 body {
     background-color: white;
     align-items: center;
@@ -18,6 +20,7 @@ body {
     min-height: 100vh;
 }
 
+/* Header e navegação */
 header .navegacao {
     font-family: 'Montserrat', sans-serif;
     justify-content: space-between;
@@ -50,10 +53,12 @@ header .navegacao a {
     margin-right: 1rem;
 }
 
+/* Classe para textos azuis */
 .azul {
     color: var(--Azul-Titulo);
-  }
+}
 
+/* Seção vida-mar */
 .vida-mar {
     text-align: center;
     color: #fff;
@@ -72,6 +77,7 @@ header .navegacao a {
     text-align: center;
 }
 
+/* Carrossel de cards */
 .cards-carrousel .cards {
     list-style: none;
 }
@@ -99,6 +105,7 @@ header .navegacao a {
     border-radius: 10px;
 }
 
+/* Título do card */
 .cards-carrousel .cards .geral .card .titulo {
     color: #ffffff;
     padding: 8px 16px;
@@ -111,12 +118,14 @@ header .navegacao a {
     margin-bottom: 1rem;
 }
 
+/* Descrição do card */
 .cards-carrousel .cards .geral .card .descricao {
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
 }
 
+/* Seta do card */
 .cards-carrousel .cards .geral .card .seta-dir {
     height: 35px;
     width: 35px;
@@ -135,6 +144,7 @@ header .navegacao a {
     background: #ffffff;
 }
 
+/* Carrossel */
 .cards-carrousel {
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -151,6 +161,7 @@ header .navegacao a {
     flex: 0 0 auto;
 }
 
+/* Carrossel responsivo */
 .cards-carrousel {
     position: relative;
     width: 100%;
@@ -166,18 +177,20 @@ header .navegacao a {
     overflow-x: auto;
     scroll-behavior: smooth;
     padding-bottom: 8px;
-    scrollbar-width: none;
+    scrollbar-width: none; /* Firefox */
 }
 
 .cards-carrousel .cards::-webkit-scrollbar {
-    display: none;
+    display: none; /* Chrome/Safari */
 }
 
+/* Card mínimo */
 .card {
     min-width: 300px;
     flex: 0 0 auto;
 }
 
+/* Botões de seta do carrossel */
 .arrow {
     position: absolute;
     top: 50%;
@@ -211,15 +224,17 @@ header .navegacao a {
     transition: transform 0.3s;
 }
 
+/* Título das seções */
 .titulo-vcs {
     text-align: center;
     color: var(--Azul-Titulo);
-    
+    /* h1 interno estilizado */
     & h1 {
         font-size: 5rem;
     }
 }
 
+/* Curiosidades */
 .curiosidade-n1 {
     display: flex;
     justify-content: center;
@@ -232,10 +247,11 @@ header .navegacao a {
     }
 }
 
+/* Animação de flutuar */
 .flutuar {
     animation: subirDescer 4s ease-in-out infinite;
     position: relative;
-  }
+}
 
 @keyframes subirDescer {
     0% {
@@ -249,6 +265,7 @@ header .navegacao a {
     }
 }
 
+/* Outras curiosidades */
 .curiosidade-n2 {
     display: flex;
     justify-content: center;
@@ -273,6 +290,7 @@ header .navegacao a {
     }
 }
 
+/* Rodapé */
 footer .rodape {
     padding: 2rem;
     background-color: var(--Azul-Titulo);

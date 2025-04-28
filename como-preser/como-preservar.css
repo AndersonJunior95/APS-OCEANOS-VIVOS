@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* Importa a fonte Montserrat do Google Fonts */
 
+/* Variáveis de cor */
 :root {
     --paragrafo: white;
     --Azul-Titulo: #90e0ef;
     --Azul-Escuro: #0050A7;
 }
 
+/* Reset e fonte padrão */
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Estilo do body */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #001f3f;
@@ -21,10 +24,12 @@ body {
     padding: 0;
 }
 
+/* Cor azul para títulos */
 .azul {
     color: var(--Azul-Titulo);
 }
 
+/* Navegação do header */
 header .navegacao {
     font-family: 'Montserrat', sans-serif;
     justify-content: space-between;
@@ -32,11 +37,13 @@ header .navegacao {
     align-items: center;
 }
 
+/* Logo do header */
 header .navegacao img {
     margin-left: 3rem;
     width: 100px;
 }
 
+/* Lista de navegação */
 header .navegacao ul {
     display: flex;
     list-style: none;
@@ -44,10 +51,12 @@ header .navegacao ul {
     padding: 0rem;
 }
 
+/* Itens da navegação */
 header .navegacao li {
     padding: 8px;
 }
 
+/* Links da navegação */
 header .navegacao a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -57,20 +66,24 @@ header .navegacao a {
     margin-right: 1rem;
 }
 
+/* Seção textual principal */
 .textual {
     align-items: center;
     display: flex;
 }
 
+/* Imagem da seção textual */
 .textual .imagem {
     width: 34rem;
 }
 
+/* Texto da seção textual */
 .textual .texto-preservar {
     align-items: center;
     justify-content: center;
 }
 
+/* Título da seção textual */
 .textual .texto-preservar h1 {
     margin-left: 9rem;
     font-size: 5rem;
@@ -78,10 +91,12 @@ header .navegacao a {
     color: var(--Azul-Titulo);
 }
 
+/* Parágrafo da seção textual */
 .textual .texto-preservar p {
     margin: 0 10rem 0 10rem;
 }
 
+/* Seção de ameaças */
 .ameacas .texto-ameacas {
     margin-top: 2rem;
     text-align: center;
@@ -95,10 +110,10 @@ header .navegacao a {
 
     & p {
         margin: 0 10rem 0 10rem;
-
     }
 }
 
+/* Seção de dados visuais */
 .dados-visuais {
     margin-top: 4rem;
     display: flex;
@@ -108,6 +123,7 @@ header .navegacao a {
     background: -moz-linear-gradient(top, #0050A7, #00b4d8);
 }
 
+/* Cartão de gráfico */
 .grafico {
     background: #003f5c;
     border-radius: 16px;
@@ -116,16 +132,19 @@ header .navegacao a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Título do gráfico */
 .grafico h3 {
     color: white;
     margin: 20px 0 10px;
 }
 
+/* Parágrafo do gráfico */
 .grafico p {
     font-size: 0.95em;
     color: #d9e9f0;
 }
 
+/* Círculo visual dos gráficos */
 .circulo {
     width: 120px;
     height: 120px;
@@ -141,6 +160,7 @@ header .navegacao a {
     position: relative;
 }
 
+/* Seção oceanos essenciais */
 .oceanos-essenciais {
     display: flex;
     align-items: center;
@@ -151,8 +171,8 @@ header .navegacao a {
     }
 }
 
+/* Texto da seção oceanos essenciais */
 .oceanos-essenciais .texto-essenciais {
-    
     & h1 {
         text-align: end;
         margin-right: 9rem;
@@ -163,11 +183,11 @@ header .navegacao a {
 
     & p {
         text-align: end;
-
         margin: 0 150px 0 10rem;
     }
 }
 
+/* Seção preservar */
 .preservar {
     padding: 60px 20px;
     max-width: 900px;
@@ -175,26 +195,31 @@ header .navegacao a {
     text-align: center;
 }
 
+/* Título da seção preservar */
 .preservar h1 {
     font-size: 2.4em;
 }
 
+/* Checklist de ações */
 .checklist {
     text-align: center;
     margin-bottom: 2rem;
 }
 
+/* Título do checklist */
 .checklist h1 {
     font-size: 2.4em;
     margin-bottom: 10px;
 }
 
+/* Parágrafo do checklist */
 .checklist p {
     font-size: 1.2em;
     color: var(--Azul-Paragrafo);
     margin-bottom: 30px;
 }
 
+/* Lista de ações */
 .lista-acoes {
     display: flex;
     flex-direction: column;
@@ -202,6 +227,7 @@ header .navegacao a {
     margin-top: 40px;
 }
 
+/* Item da lista de ações */
 .item {
     background: #003f5c;
     border-radius: 8px;
@@ -217,6 +243,7 @@ header .navegacao a {
     max-width: 90rem;
 }
 
+/* Checkbox dos itens */
 .checkbox {
     width: 20px;
     height: 20px;
@@ -229,12 +256,14 @@ header .navegacao a {
     font-size: 1em;
 }
 
+/* Item selecionado */
 .item.selecionado .checkbox {
     background-color: white;
     color: #003f5c;
     font-weight: bold;
 }
 
+/* Mensagem final após checklist */
 .mensagem-final {
     display: none;
     background: #0077b6;
@@ -249,6 +278,7 @@ header .navegacao a {
     margin-right: auto;
 }
 
+/* Rodapé */
 footer .rodape {
     padding: 2rem;
     background-color: var(--Azul-Escuro);
@@ -260,4 +290,4 @@ footer .rodape {
       color: var(--paragrafo);
       text-align: center;
     }
-  }
+}
