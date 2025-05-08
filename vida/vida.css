@@ -219,7 +219,6 @@ header .navegacao a {
 }
 
 .arrow.left span {
-    transform: rotate(180deg);
     display: inline-block;
     transition: transform 0.3s;
 }
